@@ -27,7 +27,7 @@ const BlogPage = () => {
 
   const data = useStaticQuery( graphql`
           query {
-            allContentfulBlogPost(sort: {fields: publishDate, order: DESC}) {
+            allContentfulBlogPost(sort: { fields: publishDate, order: DESC } filter: {node_locale: {eq: "en-US"}} ) {
               edges {
                 node {
                   slug
@@ -55,7 +55,7 @@ const link = {
 
 let posts =   data.allContentfulBlogPost.edges 
 // const posts =   data.allMarkdownRemark.edges
-posts = posts.filter((v,i,a)=>a.findIndex(t=>(JSON.stringify(t) === JSON.stringify(v)))===i)
+// posts = posts.filter((v,i,a)=>a.findIndex(t=>(JSON.stringify(t) === JSON.stringify(v)))===i)
 
     return (
         <Layout>

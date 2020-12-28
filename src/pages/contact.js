@@ -8,7 +8,7 @@ const ContactPage = () => {
             <h1>Contact</h1>
             <p> 
             {/* "format": "prettier --write \"**//*.{js,jsx,ts,tsx,json,md}\"", */}
-                The best way to reach me is via <a href="https://twitter.com/@andrew_j_mead" >@andrew_j_mead</a> on Twitter!
+                The best way to reach me is via <a href="https://www.facebook.com/rakib.nazrulislam/" >Rakib Nazrul Islam</a> on Facebook!
             </p>
         </Layout>
     )
